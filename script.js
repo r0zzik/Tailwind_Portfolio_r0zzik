@@ -163,3 +163,6 @@ document.querySelectorAll('.copy-btn').forEach((btn) => {
 
 // ФУТЕР
 year.textContent = new Date().getFullYear();
+
+// Прокрутка в начало
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
