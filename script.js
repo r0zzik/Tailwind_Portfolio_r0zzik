@@ -1,3 +1,7 @@
+// Закрытие бургер-меню при клике на ссылку
+const menuLinks = document.querySelectorAll('nav a');
+const menuToggle = document.getElementById('menu-toggle');
+
 // Кнопка наверх
 const toTop = document.getElementById('toTop');
 
@@ -15,6 +19,12 @@ let activeFilters = new Set(['all']);
 const year = document.getElementById('year');
 
 
+// ЗАКРЫТИЕ МЕНЮ ПРИ КЛИКЕ НА ПУНКТ МЕНЮ
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.checked = false; // Снимаем галочку
+    });
+});
 
 // КНОПКА НАВЕРХ
 window.addEventListener('scroll', () => {
