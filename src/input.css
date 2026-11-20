@@ -32,6 +32,11 @@
     button {
         @apply cursor-pointer;
     }
+
+    a:active, 
+    button:active {
+        @apply opacity-70 transition-opacity duration-150;
+    }
 }
 
 @keyframes float {
