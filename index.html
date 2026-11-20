@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700;800&display=swap" rel="stylesheet">
     <title>Серкиз Роза - Фронтенд</title>
 </head>
-<body>
+<body class="overflow-x-hidden">
 
 <!-- ----- -->
 <!-- ХЭДЕР -->
@@ -19,8 +19,8 @@
         <a href="#hero" class="flex items-center group">
             <img src="./src/images/Аська аватарка.jpg" alt="" class="w-11 h-11 rounded-full border border-white object-cover mr-3 transition-all group-hover:scale-105 shadow-sm group-hover:shadow-xl duration-300">
             <div>
-                <h1 class="text-xl font-bold text-slate-700 group-hover:text-teal-600 transition-colors duration-300">Серкиз Роза</h1>
-                <p class="text-base text-slate-600 group-hover:text-teal-600 transition-colors duration-300">Фронтенд-разработчик</p>
+                <h1 class="text-sm sm:text-xl font-bold text-slate-700 group-hover:text-teal-600 transition-colors duration-300">Серкиз Роза</h1>
+                <p class="text-xs sm:text-base text-slate-600 group-hover:text-teal-600 transition-colors duration-300">Фронтенд-разработчик</p>
             </div>
         </a>
         
@@ -94,9 +94,9 @@
 
                 <div class="flex flex-col lg:flex-row gap-8 md:gap-12 w-full">
                     <div class="flex flex-1 flex-col gap-4 text-slate-600 text-base sm:text-lg leading-relaxed">
-                        <p>Изучаю фронтенд, верстаю на HTML, CSS, SCSS и Tailwind. Сейчас разбираюсь с JavaScript и React.</p>
-                        <p>Люблю аккуратные сетки и чистый код. Внимательно отношусь к адаптивности.</p>
-                        <p>Открыта к небольшим проектам и стажировкам.</p>
+                        <p>Верстаю адаптивные сайты по макетам из Figma на HTML, CSS, SCSS и Tailwind. Разрабатываю интерактивные интерфейсы на JavaScript и развиваюсь в React.</p>
+                        <p>Люблю аккуратные сетки, чистый код и внимание к деталям.</p>
+                        <p>Открыта к коммерческим проектам, работе в студии и стажировкам.</p>
                     </div>
 
                     <!-- Правая колонка: технологии (со списком) -->
@@ -324,7 +324,7 @@
                 </div>
             </div>
 
-             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reviews-grid">
+             <div class="grid grid-cols-1 md:grid-cols-2  gap-6 reviews-grid">
                 
                 <!-- Карточка РЕЗЮМЕ -->
                 <!-- Карточка КРЕСТИКИ-НОЛИКИ -->
@@ -455,100 +455,94 @@
         <section id="contacts" class="scroll-mt-28 md:scroll-mt-36 border border-white/50 rounded-2xl md:rounded-3xl shadow-md px-4 py-12 md:py-18 max-w-screen-xl mx-auto w-full">
             <div class="max-w-screen-md mx-auto w-full flex flex-col gap-8 md:gap-12 justify-center items-center text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-slate-600">Контакты</h2>
-                <p class="text-slate-600 max-w-screen-md">Открыта к предложениям по верстке сайтов, лендингов и адаптивных интерфейсов. Пишите в удобный мессенджер или на почту.</p>
+                <p class="text-slate-600 max-w-screen-md text-base sm:text-lg lg:tex-xl">Открыта к предложениям по верстке сайтов, лендингов и адаптивных интерфейсов. Пишите в удобный мессенджер или на почту.</p>
                 <div class="flex flex-col gap-4 w-fit mx-auto text-slate-700">
                     <!-- Telegram -->
                     <div class="flex items-center gap-4">
-                        <a href="https://t.me/твой_ник" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center md:justify-end gap-4 w-auto md:w-56 group">
-                            <span class="hidden md:inline-block text-base font-medium text-slate-700 group-hover:text-teal-600 transition-colors whitespace-nowrap">Написать в Telegram</span>
+                        <a href="https://t.me/твой_ник" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center sm:justify-end gap-4 w-auto sm:w-56 group">
+                            <span class="hidden sm:inline-block text-base font-medium text-slate-700 group-hover:text-teal-600 transition-colors whitespace-nowrap">Написать в Telegram</span>
                             <div class="flex justify-center items-center w-10 h-10 border border-white rounded-full shrink-0 transition-transform group-hover:scale-105">
                                 <img src="./src/images/Telegram.png" alt="Telegram" class="w-full h-full rounded-full object-cover">
                             </div>
                         </a>
-                        <span class="text-base text-slate-500 hover:text-slate-800 transition-colors">t.me/r0zzik
-                            <button type="button" data-copy="https://t.me/r0zzik" class="copy-btn group relative text-slate-500 transition hover:text-teal-600" aria-label="Скопировать адрес">
-                                <!-- Иконка двух квадратиков (SVG) -->
-                                <svg class="h-3 w-3" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                </svg>
-                                <!-- Всплывающая подсказка при наведении -->
-                                <span class="tooltip pointer-events-none absolute -top-7 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-800 px-2.5 py-1 text-xs text-white opacity-0 shadow transition-opacity group-hover:opacity-100">
-                                    Скопировать адрес
-                                </span>
-                            </button>
-                        </span>
+                        <button type="button" data-copy="https://t.me/r0zzik" class="copy-btn group relative flex items-center gap-2 text-base text-slate-500 hover:text-teal-600 transition-colors" aria-label="Скопировать адрес">
+                            <span>t.me/r0zzik</span>
+                            <!-- Иконка двух квадратиков (SVG) -->
+                            <svg class="h-4 w-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            <!-- Всплывающая подсказка при наведении -->
+                            <span class="tooltip pointer-events-none absolute -top-7 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-800 px-2.5 py-1 text-xs text-white opacity-0 shadow transition-opacity group-hover:opacity-100">
+                                Скопировать адрес
+                            </span>
+                        </button>
                     </div>
 
                     <!-- Email -->
                     <div class="flex items-center gap-4">
-                        <a href="mailto:roseness@mail.ru" class="flex items-center justify-center md:justify-end gap-4 w-auto md:w-56 group">
-                            <span class="hidden md:inline-block text-base font-medium text-slate-700 group-hover:text-teal-600 transition-colors whitespace-nowrap">Написать на почту</span>
+                        <a href="mailto:roseness@mail.ru" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center sm:justify-end gap-4 w-auto sm:w-56 group">
+                            <span class="hidden sm:inline-block text-base font-medium text-slate-700 group-hover:text-teal-600 transition-colors whitespace-nowrap">Написать на почту</span>
                             <div class="flex justify-center items-center w-10 h-10 border border-white rounded-full shrink-0 transition-transform group-hover:scale-105">
-                                <img src="./src/images/Email.png" alt="" class="w-full h-full rounded-full object-cover">
+                                <img src="./src/images/Email.png" alt="Email" class="w-full h-full rounded-full object-cover">
                             </div>
                         </a>
-                        <span class="text-base text-slate-500 hover:text-slate-800 transition-colors">
-                            roseness@mail.ru
-                            <!-- Кнопка копирования с всплывающей подсказкой (group) -->
-                            <button type="button" data-copy="roseness@mail.ru" class="copy-btn group relative text-slate-500 transition hover:text-teal-600" aria-label="Скопировать почту">
-                                <!-- Иконка двух квадратиков (SVG) -->
-                                <svg class="h-3 w-3" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                </svg>
-                                <!-- Всплывающая подсказка при наведении -->
-                                <span class="tooltip pointer-events-none absolute -top-7 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-800 px-2.5 py-1 text-xs text-white opacity-0 shadow transition-opacity group-hover:opacity-100">
-                                    Скопировать почту
-                                </span>
-                            </button>
-                        </span>
+                        <button type="button" data-copy="roseness@mail.ru" class="copy-btn group relative flex items-center gap-2 text-base text-slate-500 hover:text-teal-600 transition-colors" aria-label="Скопировать адрес">
+                            <span>roseness@mail.ru</span>
+                            <!-- Иконка двух квадратиков (SVG) -->
+                            <svg class="h-4 w-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            <!-- Всплывающая подсказка при наведении -->
+                            <span class="tooltip pointer-events-none absolute -top-7 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-800 px-2.5 py-1 text-xs text-white opacity-0 shadow transition-opacity group-hover:opacity-100">
+                                Скопировать адрес
+                            </span>
+                        </button>
                     </div>
 
                     <!-- GitHub -->
                     <div class="flex items-center gap-4">
-                        <a href="https://github.com/r0zzik" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center md:justify-end gap-4 w-auto md:w-56 group">
-                            <span class="hidden md:inline-block text-base font-medium text-slate-700 group-hover:text-teal-600 transition-colors whitespace-nowrap">Посмотреть код</span>
+                        <a href="https://github.com/r0zzik" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center sm:justify-end gap-4 w-auto sm:w-56 group">
+                            <span class="hidden sm:inline-block text-base font-medium text-slate-700 group-hover:text-teal-600 transition-colors whitespace-nowrap">Посмотреть код</span>
                             <div class="flex justify-center items-center w-10 h-10 border border-white rounded-full shrink-0 transition-all group-hover:bg-white/50 group-hover:scale-105">
                                 <img src="./src/images/GitHub.png" alt="" class="w-full h-full rounded-full object-cover">
                             </div>
                         </a>
-                        <span class="text-base text-slate-500 hover:text-slate-800 transition-colors">github.com/r0zzik
-                            <button type="button" data-copy="https://github.com/r0zzik/" class="copy-btn group relative text-slate-500 transition hover:text-teal-600" aria-label="Скопировать адрес">
-                                <!-- Иконка двух квадратиков (SVG) -->
-                                <svg class="h-3 w-3" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                </svg>
-                                <!-- Всплывающая подсказка при наведении -->
-                                <span class="tooltip pointer-events-none absolute -top-7 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-800 px-2.5 py-1 text-xs text-white opacity-0 shadow transition-opacity group-hover:opacity-100">
-                                    Скопировать адрес
-                                </span>
-                            </button>
-                        </span>
+                        <button type="button" data-copy="https://github.com/r0zzik/" class="copy-btn group relative flex items-center gap-2 text-base text-slate-500 hover:text-teal-600 transition-colors" aria-label="Скопировать адрес">
+                            <span>github.com/r0zzik</span>
+                            <!-- Иконка двух квадратиков (SVG) -->
+                            <svg class="h-4 w-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            <!-- Всплывающая подсказка при наведении -->
+                            <span class="tooltip pointer-events-none absolute -top-7 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-800 px-2.5 py-1 text-xs text-white opacity-0 shadow transition-opacity group-hover:opacity-100">
+                                Скопировать адрес
+                            </span>
+                        </button>
                     </div>
 
                     <!-- Kwork -->
                     <div class="flex items-center gap-4">
-                        <a href="https://kwork.ru/user/r0zzik" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center md:justify-end gap-4 w-auto md:w-56 group">
-                            <span class="hidden md:inline-block text-base font-medium text-slate-700 group-hover:text-teal-600 transition-colors whitespace-nowrap">Заказать на Kwork</span>
+                        <a href="https://kwork.ru/user/r0zzik" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center sm:justify-end gap-4 w-auto sm:w-56 group">
+                            <span class="hidden sm:inline-block text-base font-medium text-slate-700 group-hover:text-teal-600 transition-colors whitespace-nowrap">Заказать на Kwork</span>
                             <div class="flex justify-center items-center w-10 h-10 border border-white rounded-full shrink-0 transition-transform group-hover:scale-105">
                                 <img src="./src/images/Kwork.png" alt="" class="w-full h-full rounded-full object-cover">
                             </div>
                         </a>
-                        <span class="text-base text-slate-500 hover:text-slate-800 transition-colors">r0zzik
-                            <button type="button" data-copy="https://kwork.ru/user/r0zzik" class="copy-btn group relative text-slate-500 transition hover:text-teal-600" aria-label="Скопировать адрес">
-                                <!-- Иконка двух квадратиков (SVG) -->
-                                <svg class="h-3 w-3" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                </svg>
-                                <!-- Всплывающая подсказка при наведении -->
-                                <span class="tooltip pointer-events-none absolute -top-7 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-800 px-2.5 py-1 text-xs text-white opacity-0 shadow transition-opacity group-hover:opacity-100">
-                                    Скопировать адрес
-                                </span>
-                            </button>
-                        </span>
+                        <button type="button" data-copy="https://kwork.ru/user/r0zzik" class="copy-btn group relative flex items-center gap-2 text-base text-slate-500 hover:text-teal-600 transition-colors" aria-label="Скопировать адрес">
+                            <span>r0zzik</span>
+                            <!-- Иконка двух квадратиков (SVG) -->
+                            <svg class="h-4 w-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            <!-- Всплывающая подсказка при наведении -->
+                            <span class="tooltip pointer-events-none absolute -top-7 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-800 px-2.5 py-1 text-xs text-white opacity-0 shadow transition-opacity group-hover:opacity-100">
+                                Скопировать адрес
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -561,7 +555,7 @@
 <!-- ----- -->
 
     <footer>
-        <div class="flex justify-between items-center px-5 md:px-7 py-4 md:py-6 bg-white/30 backdrop-blur-md border border-white/50 rounded-2xl md:rounded-3xl shadow-md">
+        <div class="flex flex-col sm:flex-row gap-y-4 sm:justify-between items-start sm:items-center px-5 md:px-7 py-4 md:py-6 bg-white/30 backdrop-blur-md border border-white/50 rounded-2xl md:rounded-3xl shadow-md">
             <a href="#hero" class="flex items-center group">
                 <img src="./src/images/Аська аватарка.jpg" alt="" class="w-9 h-9 rounded-full object-cover mr-2 transition-transform group-hover:scale-105">
                 <div>
@@ -569,7 +563,7 @@
                     <p class="text-xs text-slate-600 group-hover:text-teal-600 transition-colors">Фронтенд-разработчик</p>
                 </div>
             </a>
-            <div class="hidden sm:flex justify-end items-start gap-1.5">
+            <div class="flex justify-end items-start gap-1.5">
                 <!-- Telegram -->
                 <a href="https://t.me/r0zzik" target="_blank" rel="noopener noreferrer" aria-label="Telegram" title="Telegram" class="flex justify-center items-center w-9 h-9 border border-white rounded-full text-slate-700 hover:bg-white/50 transition-all transition-colors hover:scale-105">
                     <img src="./src/images/Telegram.png" alt="Telegram" class="w-full h-full rounded-full object-cover">
